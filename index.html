@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karachi Mart | Fresh groceries</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><strong>Karachi <span>Mart</span></strong
+        ><small>Everyday essentials, delivered</small></a
+      >
+      <form id="search-form" class="search-form">
+        <select id="area">
+          <option value="">Select area</option>
+          <option>Gulistan-e-Johar</option>
+          <option>Gulshan-e-Iqbal</option>
+          <option>Malir</option>
+          <option>North Nazimabad</option></select
+        ><input
+          id="search"
+          type="search"
+          placeholder="Search groceries..."
+          autocomplete="off"
+        /><button aria-label="Search">
+          <i class="fa-solid fa-search"></i>
+        </button>
+      </form>
+      <nav class="header-actions">
+        <button id="profile-button" class="profile-button" type="button">
+          Login</button
+        ><a class="cart-link" href="cart.html"
+          ><i class="fa-solid fa-basket-shopping"></i
+          ><b id="cart-count">0</b></a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">Karachi's local grocery store</span>
+          <h1>Fresh groceries.<br /><em>Delivered simply.</em></h1>
+          <p>
+            Trusted essentials, honest prices and quick delivery across Karachi.
+          </p>
+          <button class="primary-button" id="shop-now" type="button">
+            Shop now <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="hero-badge">
+          <strong>30-45 min</strong><span>delivery in selected areas</span>
+        </div>
+      </section>
+      <section class="section" id="categories">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Browse the store</span>
+            <h2>Shop by category</h2>
+          </div>
+        </div>
+        <div class="category-grid">
+          <button class="category" data-category="Dairy & Eggs">
+            <i class="fa-solid fa-cow"></i><span>Dairy & Eggs</span></button
+          ><button class="category" data-category="Beverages">
+            <i class="fa-solid fa-bottle-water"></i
+            ><span>Beverages</span></button
+          ><button class="category" data-category="Oil & Ghee">
+            <i class="fa-solid fa-droplet"></i><span>Oil & Ghee</span></button
+          ><button class="category" data-category="Ration">
+            <i class="fa-solid fa-bowl-rice"></i><span>Ration</span></button
+          ><button class="category" data-category="Spices & Masala">
+            <i class="fa-solid fa-pepper-hot"></i
+            ><span>Spices & Masala</span></button
+          ><button class="category" data-category="Cleaning">
+            <i class="fa-solid fa-spray-can-sparkles"></i><span>Cleaning</span>
+          </button>
+        </div>
+      </section>
+      <section class="section products" id="products">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Popular this week</span>
+            <h2>Featured products</h2>
+          </div>
+          <span id="result-label" class="muted">6 products</span>
+        </div>
+        <div id="product-grid" class="product-grid"></div>
+      </section>
+      <section class="offers">
+        <article>
+          <span>Monthly deal</span>
+          <h2>Rashan bundle</h2>
+          <p>Atta, rice, oil and tea at a special bundle price.</p>
+          <button class="offer-button" data-offer="bundle" type="button">
+            Add bundle · Rs. 1,899
+          </button>
+        </article>
+        <article>
+          <span>Buy 1 get 1 free</span>
+          <h2>Tapal Danedar Tea</h2>
+          <p>Buy one 900g pack and receive another pack free.</p>
+          <button class="offer-button" data-offer="bogo" type="button">
+            Claim offer · Rs. 700
+          </button>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html"
+            ><strong>Karachi <span>Mart</span></strong
+            ><small>Everyday essentials, delivered</small></a
+          >
+          <p>
+            Quality groceries, honest prices and reliable delivery for homes
+            across Karachi.
+          </p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <a href="index.html">Home</a><a href="#categories">Categories</a
+          ><a href="#products">Products</a><a href="cart.html">My cart</a>
+        </div>
+        <div>
+          <h3>Customer care</h3>
+          <a href="profile.html">My profile</a><a href="login.html">Login</a
+          ><a href="mailto:kamiiikhan234@gmail.com">Email support</a
+          ><a href="tel:03495809136">0349-5809136</a>
+        </div>
+        <div>
+          <h3>We deliver in</h3>
+          <p>
+            Gulistan-e-Johar<br />Gulshan-e-Iqbal<br />Malir<br />North
+            Nazimabad<br />DHA Karachi
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Karachi Mart</span><span>COD · EasyPaisa · JazzCash</span>
+      </div>
+    </footer>
+    <aside id="profile-drawer" class="drawer" aria-hidden="true">
+      <button id="close-drawer" class="icon-button" type="button">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="drawer-user">
+        <div id="drawer-avatar" class="avatar">KM</div>
+        <div>
+          <strong id="drawer-name">Welcome</strong
+          ><span id="drawer-email">Sign in to your account</span>
+        </div>
+      </div>
+      <a href="profile.html"><i class="fa-solid fa-user"></i> My profile</a
+      ><a href="cart.html"
+        ><i class="fa-solid fa-basket-shopping"></i> My cart</a
+      ><button id="logout" class="logout" type="button">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+      </button>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
